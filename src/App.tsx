@@ -38,7 +38,7 @@ export default function App() {
     const mappedLocation = locationMap[data.location] || data.location;
 
     const payload = {
-      sheetName: "BC Lâm",
+      sheetName: "BC Tổng Bar",
       location: String(mappedLocation || ""),
       items: data.items.map(item => {
         const def = CHECKLIST_ITEMS.find((d) => d.id === item.id);
@@ -102,7 +102,7 @@ export default function App() {
         backgroundColor: '#ffffff',
       });
 
-      const fileNameSuffix = 'Lam';
+      const fileNameSuffix = 'TongBar';
       const link = document.createElement('a');
       const now = new Date();
       const dateStr = now.toISOString().split('T')[0];
@@ -122,7 +122,7 @@ export default function App() {
           pixelRatio: 2,
           backgroundColor: '#ffffff',
         });
-        const fileNameSuffix = 'Lam';
+        const fileNameSuffix = 'TongBar';
         const link = document.createElement('a');
         const now = new Date();
         const dateStr = now.toISOString().split('T')[0];
@@ -150,7 +150,7 @@ export default function App() {
                 <Camera className="w-5 h-5" />
               </div>
               <h1 className="text-xl font-bold text-slate-900 tracking-tight">
-                CS Báo Cáo Lâm
+                CS Báo Cáo Tổng Bar
               </h1>
             </div>
             

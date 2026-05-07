@@ -22,7 +22,7 @@ export const ReportPreview = forwardRef<HTMLDivElement, ReportPreviewProps>(
         {/* Header */}
         <div className="text-center mb-8 border-b-2 border-slate-800 pb-6">
           <h1 className="text-2xl font-bold uppercase tracking-wide text-slate-900 mb-2">
-            Báo Cáo Lâm
+            Báo Cáo Tổng Bar
           </h1>
           <div className="text-lg font-medium text-slate-700">
             Cơ sở: <span className="font-bold text-slate-900">{data.location || '...'}</span>
